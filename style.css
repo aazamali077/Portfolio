@@ -92,7 +92,7 @@ body{
     height: 80%;
     position: absolute;
     bottom: 0;
-    right: 1%;
+    right: 100px;
 }
 
 .photos img{
@@ -100,17 +100,18 @@ body{
     position: absolute;
     left: 50%;
     bottom: 0;
-    transform: translateX(-70%);
-    transition: bottom 1s;
+    transform: translateX(-60%);
+    transition: bottom 0.6s, left 0.6s;
 }
 
-#bg{
-    transform: translateX(-50%);
-    /* margin-left: 20%; */
-    margin-right: 80%;
-    
+.bg{
+    margin-left: 20%;
 }
 
-#bg:hover{
-    bottom: 15%;
+.photos:hover .bg{
+    bottom: 30px;
+}
+
+.photos:hover .hi{
+    left: 54%;
 }
