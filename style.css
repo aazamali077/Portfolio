@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+}
+
+:root{
+    --primary-color:#e8e8e8;
+    --secondary-color: #212121;
+    --third-color: orangered;
+}
+
+body{
+    background: var(--primary-color);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+}
+
+.header nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.header nav ul li{
+    display: inline;
+    float: left;
+    padding: 18px;
+}
+
+.header nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.header nav ul li a:hover{
+    color: var(--third-color);
+    text-decoration: underline ;
+    text-underline-offset: 10px;
+}
+
+.intro-section{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-intro{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5%;
+}
+
+.text-intro h1{
+    font-size: 100px;
+    line-height: 100px;
+}
+
+.text-intro h2{
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+.text-intro h2 span{
+    font-size: 45px;
+    color: var(--third-color);
+}
+
+.text-intro p span{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.photos{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 1%;
+}
+
+.photos img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-70%);
+    transition: bottom 1s;
+}
+
+#bg{
+    transform: translateX(-50%);
+    /* margin-left: 20%; */
+    margin-right: 80%;
+    
+}
+
+#bg:hover{
+    bottom: 15%;
+}
