@@ -129,10 +129,10 @@ html{
 }
 
 .portfolio-text h2{
-    font-size: 50px;
+    font-size: 4vw;
     font-weight: 400;
-    text-decoration: underline 2px;
-    text-underline-offset: 10px;
+    text-decoration: underline 0.2vw;
+    text-underline-offset: 1vw;
     color: var(--secondary-color);
     
 }
@@ -144,13 +144,14 @@ html{
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
-    background: #162039f0;
+    background: #3d4047f0;
     border-radius: 10px;
 }
 
 .portfolio a{
     flex: 1 1 calc(33.333% - 20px); /* 3 images per row */
     max-width: calc(33.333% - 20px);
+    text-decoration: none;
 }
 
 .portfolio img{
@@ -159,6 +160,15 @@ html{
     display: block;
     border-radius: 10px;
     object-fit: cover;
+    transition: width 0.2s, height 0.2s;
+}
+
+.portfolio a span{
+    display: block;
+    color: var(--secondary-color);
+    font-size: 2vw;
+    padding-top: 1.5vw;
+    text-align: center;
 }
 
 .about-heading{
@@ -172,9 +182,11 @@ html{
 }
 
 .about-heading h2{
-    font-size: 50px;
+    font-size: 4vw;
+    text-decoration: underline 0.2vw;
     font-weight: 400;
     color: var(--secondary-color);
+    text-underline-offset: 1vw;
 }
 
 .About{
