@@ -9,12 +9,17 @@
 }
 
 :root{
-    --primary-color:#e8e8e8;
-    --secondary-color: #212121;
+    --primary-color:#212121;
+    --secondary-color: #f4f4f4;
     --third-color: orangered;
 }
 body{
     background: var(--primary-color);
+}
+
+html{
+    scroll-behavior: smooth;
+
 }
 .header{
     display: flex;
@@ -69,16 +74,24 @@ body{
 .text-intro h1{
     font-size: 6vw;
     line-height: 1.1;
+    color: var(--secondary-color);
 }
 .text-intro h2{
     font-size: 4vw;
     padding-bottom: 30px;
     padding-top: 10px;
     font-weight: normal;
+    color: var(--secondary-color);
 }
 .text-intro h2 span{
     font-size: 5vw;
     color: var(--third-color);
+}
+
+.text-intro p{
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 200;
 }
 .photos{
     width: 45%;
@@ -106,12 +119,32 @@ body{
     left: 52%;
 }
 
+.portfolio-text{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.portfolio-text h2{
+    font-size: 50px;
+    font-weight: 400;
+    text-decoration: underline 2px;
+    text-underline-offset: 10px;
+    color: var(--secondary-color);
+    
+}
+
 .portfolio{
-    margin: 20% 5%;
+    margin: 5% 3%;
+    padding: 3%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px; /* Adjust gap between images */
+    gap: 20px;
+    background: #162039f0;
+    border-radius: 10px;
 }
 
 .portfolio a{
@@ -120,13 +153,94 @@ body{
 }
 
 .portfolio img{
-
     width: 100%;
     height: 80%;
     display: block;
     border-radius: 10px;
     object-fit: cover;
 }
+
+.about-heading{
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-heading h2{
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+.About{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20%;
+}
+
+.about-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    left: 0;
+    height: auto;
+    
+}
+
+.about-intro h3{
+    margin-bottom: 4%;
+    margin-left: 8%;
+    font-size: 40px;
+    font-weight: 300;
+    text-decoration: underline 2px;
+    text-underline-offset: 10px;
+    color: var(--secondary-color);
+}
+
+.about-intro p{
+    margin-left: 8%;
+    color: var(--secondary-color);
+    line-height: 30px;
+    font-size: 18px;
+    left: 0;
+    font-weight: 200;
+}
+
+.about-intro a{
+    width: 180px;
+    height: 40px;
+    margin-top: 12%;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 1.5%;
+    background: var(--third-color);
+    color: var(--secondary-color);
+    border-radius: 5px;
+    
+}
+
+.About img{
+    width: 25vw;
+    height: 30vw;
+    margin-right: 10%;
+    margin-top: -5%;
+    border-radius: 10px;
+    box-shadow: 15px 15px var(--third-color);
+    transform: translateY(10%);
+    
+}
+
+
+
+
 
 @media (max-width: 768px) {
     .portfolio a {
