@@ -7,6 +7,8 @@
     <script src="https://kit.fontawesome.com/68b673022f.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css files/projects.css">
+    <link rel="stylesheet" href="toaststyle.css">
     <link rel="shortcut icon" href="images/talent-search.png" type="image/x-icon">
 
 </head>
@@ -14,18 +16,18 @@
     <div class="header">
         <nav id="home">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#Home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfo">Portfolio</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Hire me</a></li>
+                <li><a onclick="showToast(warningMsg)">Services</a></li>
+                <li><a onclick="showToast(warningMsg)">Hire me</a></li>
             </ul>
             <img src="mode images/moon.png" id="dark-mode">
         </nav>
         
     </div>
 
-    <div class="intro-section">
+    <div class="intro-section" id = "Home">
         <div class="text-intro">
             <h1>Hello!</h1>
             <h2>I'm <span>Aazam</span> Ali</h2>
@@ -72,9 +74,27 @@
         
     </div>
 
+    <!-- <div class="projects">
+        <div class="item-1">
+            <a href="" ><img src="portfolio images/agecalculator.jpg" alt=""></a>
+            <a href=""><img src="portfolio images/agecalculator.jpg" alt=""></a>
+        </div>
+        
+        <div class="item-2">
+            <a href=""><img src="portfolio images/agecalculator.jpg" alt=""></a>
+        </div>
+        
+        <div class="item-3">
+            <a href=""><img src="portfolio images/agecalculator.jpg" alt=""></a>
+            <a href=""><img src="portfolio images/agecalculator.jpg" alt=""></a>
+        </div>
 
+    </div> -->
 
-
+    <div id="toastbox">
+    
+    </div>
     <script src="portfolio.js"></script>
+    <script src="toast.js"></script>
 </body>
 </html>

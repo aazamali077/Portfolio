@@ -9,3 +9,4 @@ icon.onclick = function(){
         icon.src = "mode images/moon.png";
     }
 }
+

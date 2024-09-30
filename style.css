@@ -55,6 +55,7 @@ html{
     font-size: 20px;
     text-decoration: none;
     color: var(--secondary-color);
+    cursor: pointer;
 }
 .header nav ul li a:hover{
     color: var(--third-color);
