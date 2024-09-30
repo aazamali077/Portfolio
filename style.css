@@ -12,6 +12,14 @@
     --primary-color:#212121;
     --secondary-color: #f4f4f4;
     --third-color: orangered;
+
+    --dark-mode: #3d4047f0;
+}
+
+.mode-change{
+    --secondary-color:#212121;
+    --primary-color: #f4f4f4;
+    --dark-mode: #9fc2d4f0;
 }
 body{
     background: var(--primary-color);
@@ -53,11 +61,26 @@ html{
     text-decoration: underline ;
     text-underline-offset: 10px;
 }
+
+#home{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#dark-mode{
+    width: 40px;
+    margin-top: 50px;
+    transform: translateX(13vw);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
 .intro-section{
     margin-top: 10%;
-    margin-bottom: 20%;
+    /* margin-bottom: 20%; */
     width: 100%;
-    height: auto;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -65,7 +88,7 @@ html{
 }
 .text-intro{
     width: 40%;
-    height: auto;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -91,26 +114,29 @@ html{
 
 .text-intro p{
     color: var(--secondary-color);
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 200;
 }
 .photos{
+    display: flex;
+    align-items:center;
+    justify-content: center;
     width: 45%;
-    height: 80%;
     position: absolute;
-    bottom: 15%;
-    right: 100px;
+    /* bottom: 15%; */
+    right: 5%;
+    padding-bottom: 15%;
 }
 .photos img{
-    width: 30vw;
-    height: 28vw;
+    width: 35vw;
+    height: 32vw;
     position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-60%);
+    /* left: 50%; */
+    /* bottom: 0; */
+    /* transform: translateX(-60%); */
     transition: bottom 0.6s, left 0.6s;
 }
-.bg{
+/* .bg{
     margin-left: 20%;
 }
 .photos:hover .bg{
@@ -118,7 +144,7 @@ html{
 }
 .photos:hover .hi{
     left: 52%;
-}
+} */
 
 .portfolio-text{
     width: 100%;
@@ -144,7 +170,7 @@ html{
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
-    background: #3d4047f0;
+    background: var(--dark-mode);
     border-radius: 10px;
 }
 
@@ -174,7 +200,6 @@ html{
 .about-heading{
     width: 100%;
     height: auto;
-    margin-top: 25%;
     margin-bottom: 5%;
     display: flex;
     align-items: center;
@@ -236,9 +261,8 @@ html{
     text-decoration: none;
     padding-top: 1.5%;
     background: var(--third-color);
-    color: var(--secondary-color);
-    border-radius: 5px;
-    
+    color: #fff;
+    border-radius: 5px;  
 }
 
 .About img{
@@ -265,6 +289,7 @@ html{
     .intro-section {
         flex-direction: column;
         text-align: center; /* Align text centrally */
+        margin-top: 10%;
     }
 
     .text-intro {
